@@ -1,0 +1,7 @@
+2023-10-04 03:11:25,588 - train - INFO - RNN(
+  (rnn): RNN(1, 50, batch_first=True, dropout=0.2)
+  (fc): Sequential(
+    (0): Linear(in_features=150, out_features=1, bias=True)
+    (1): Sigmoid()
+  )
+)

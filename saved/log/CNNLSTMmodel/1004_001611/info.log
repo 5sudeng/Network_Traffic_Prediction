@@ -1,0 +1,26 @@
+2023-10-04 00:16:11,505 - train - INFO - CNN_LSTM(
+  (c1): Conv1d(1, 1, kernel_size=(2,), stride=(1,))
+  (lstm): LSTM(1, 50, dropout=0.2)
+  (linear): Linear(in_features=50, out_features=1, bias=True)
+)
+2023-10-04 00:16:44,112 - trainer - INFO -     epoch          : 1
+2023-10-04 00:16:44,113 - trainer - INFO -     loss           : 0.20476631956372254
+2023-10-04 00:16:44,113 - trainer - INFO -     val_loss       : 0.19926418811258473
+2023-10-04 00:16:44,123 - trainer - INFO - Saving checkpoint: saved/models/CNNLSTMmodel/1004_001611/checkpoint-epoch1.pth ...
+2023-10-04 00:16:44,128 - trainer - INFO - Saving current best: model_best.pth ...
+2023-10-04 00:17:13,680 - trainer - INFO -     epoch          : 2
+2023-10-04 00:17:13,681 - trainer - INFO -     loss           : 0.20345292946449905
+2023-10-04 00:17:13,681 - trainer - INFO -     val_loss       : 0.20479485576282644
+2023-10-04 00:17:13,686 - trainer - INFO - Saving checkpoint: saved/models/CNNLSTMmodel/1004_001611/checkpoint-epoch2.pth ...
+2023-10-04 00:17:41,862 - trainer - INFO -     epoch          : 3
+2023-10-04 00:17:41,862 - trainer - INFO -     loss           : 0.20300284798609336
+2023-10-04 00:17:41,862 - trainer - INFO -     val_loss       : 0.20271246424424966
+2023-10-04 00:17:41,868 - trainer - INFO - Saving checkpoint: saved/models/CNNLSTMmodel/1004_001611/checkpoint-epoch3.pth ...
+2023-10-04 00:18:10,503 - trainer - INFO -     epoch          : 4
+2023-10-04 00:18:10,504 - trainer - INFO -     loss           : 0.20343051955096178
+2023-10-04 00:18:10,504 - trainer - INFO -     val_loss       : 0.20306890207868802
+2023-10-04 00:18:10,510 - trainer - INFO - Saving checkpoint: saved/models/CNNLSTMmodel/1004_001611/checkpoint-epoch4.pth ...
+2023-10-04 00:18:39,480 - trainer - INFO -     epoch          : 5
+2023-10-04 00:18:39,482 - trainer - INFO -     loss           : 0.20337138210510092
+2023-10-04 00:18:39,482 - trainer - INFO -     val_loss       : 0.20039253588541117
+2023-10-04 00:18:39,487 - trainer - INFO - Saving checkpoint: saved/models/CNNLSTMmodel/1004_001611/checkpoint-epoch5.pth ...

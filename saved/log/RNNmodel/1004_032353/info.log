@@ -1,0 +1,9 @@
+2023-10-04 03:23:53,809 - test - INFO - RNN(
+  (rnn): RNN(1, 50, batch_first=True, dropout=0.2)
+  (fc): Sequential(
+    (0): Linear(in_features=150, out_features=1, bias=True)
+    (1): Sigmoid()
+  )
+)
+2023-10-04 03:23:53,809 - test - INFO - Loading checkpoint: saved/models/RNNmodel/1004_031931/checkpoint-epoch5.pth ...
+2023-10-04 03:24:02,327 - test - INFO - {'loss': 0.21084954797807953}

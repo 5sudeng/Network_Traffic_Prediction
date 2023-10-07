@@ -1,0 +1,6 @@
+2023-10-04 01:17:34,538 - test - INFO - LSTM(
+  (lstm): LSTM(1, 50, dropout=0.2)
+  (linear): Linear(in_features=50, out_features=1, bias=True)
+)
+2023-10-04 01:17:34,539 - test - INFO - Loading checkpoint: saved/models/LSTMmodel/1004_004611/model_best.pth ...
+2023-10-04 01:17:43,134 - test - INFO - {'loss': 0.1498025522319409}

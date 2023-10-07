@@ -1,0 +1,29 @@
+2023-10-04 03:19:31,592 - train - INFO - RNN(
+  (rnn): RNN(1, 50, batch_first=True, dropout=0.2)
+  (fc): Sequential(
+    (0): Linear(in_features=150, out_features=1, bias=True)
+    (1): Sigmoid()
+  )
+)
+2023-10-04 03:20:04,949 - trainer - INFO -     epoch          : 1
+2023-10-04 03:20:04,950 - trainer - INFO -     loss           : 0.21360698678483536
+2023-10-04 03:20:04,950 - trainer - INFO -     val_loss       : 0.20074203681876926
+2023-10-04 03:20:04,961 - trainer - INFO - Saving checkpoint: saved/models/RNNmodel/1004_031931/checkpoint-epoch1.pth ...
+2023-10-04 03:20:04,965 - trainer - INFO - Saving current best: model_best.pth ...
+2023-10-04 03:20:32,252 - trainer - INFO -     epoch          : 2
+2023-10-04 03:20:32,253 - trainer - INFO -     loss           : 0.20398366204519716
+2023-10-04 03:20:32,253 - trainer - INFO -     val_loss       : 0.2010338429308349
+2023-10-04 03:20:32,258 - trainer - INFO - Saving checkpoint: saved/models/RNNmodel/1004_031931/checkpoint-epoch2.pth ...
+2023-10-04 03:20:59,340 - trainer - INFO -     epoch          : 3
+2023-10-04 03:20:59,341 - trainer - INFO -     loss           : 0.20405246207078917
+2023-10-04 03:20:59,342 - trainer - INFO -     val_loss       : 0.2019322234658811
+2023-10-04 03:20:59,346 - trainer - INFO - Saving checkpoint: saved/models/RNNmodel/1004_031931/checkpoint-epoch3.pth ...
+2023-10-04 03:21:27,393 - trainer - INFO -     epoch          : 4
+2023-10-04 03:21:27,395 - trainer - INFO -     loss           : 0.2038730975592597
+2023-10-04 03:21:27,395 - trainer - INFO -     val_loss       : 0.20321406474879802
+2023-10-04 03:21:27,400 - trainer - INFO - Saving checkpoint: saved/models/RNNmodel/1004_031931/checkpoint-epoch4.pth ...
+2023-10-04 03:21:55,727 - trainer - INFO -     epoch          : 5
+2023-10-04 03:21:55,729 - trainer - INFO -     loss           : 0.2040047993365841
+2023-10-04 03:21:55,729 - trainer - INFO -     val_loss       : 0.1995414408166106
+2023-10-04 03:21:55,735 - trainer - INFO - Saving checkpoint: saved/models/RNNmodel/1004_031931/checkpoint-epoch5.pth ...
+2023-10-04 03:21:55,738 - trainer - INFO - Saving current best: model_best.pth ...

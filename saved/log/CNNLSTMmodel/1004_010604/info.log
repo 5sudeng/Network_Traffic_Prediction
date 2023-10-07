@@ -1,0 +1,7 @@
+2023-10-04 01:06:04,468 - test - INFO - CNN_LSTM(
+  (c1): Conv1d(1, 1, kernel_size=(2,), stride=(1,))
+  (lstm): LSTM(1, 50, dropout=0.2)
+  (linear): Linear(in_features=50, out_features=1, bias=True)
+)
+2023-10-04 01:06:04,468 - test - INFO - Loading checkpoint: saved/models/CNNLSTMmodel/1004_001611/model_best.pth ...
+2023-10-04 01:06:13,317 - test - INFO - {'loss': 0.21858482280491442}
