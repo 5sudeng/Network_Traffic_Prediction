@@ -1,0 +1,9 @@
+2023-10-11 12:10:33,571 - test - INFO - RNN(
+  (rnn): RNN(1, 50, batch_first=True, dropout=0.2)
+  (fc): Sequential(
+    (0): Linear(in_features=150, out_features=1, bias=True)
+    (1): Sigmoid()
+  )
+)
+2023-10-11 12:10:33,571 - test - INFO - Loading checkpoint: saved/models/RNNmodel/1011_032320/model_best.pth ...
+2023-10-11 12:10:43,029 - test - INFO - {'loss': 0.06329341245291846}

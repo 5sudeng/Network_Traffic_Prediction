@@ -3,6 +3,7 @@ import torch.nn.functional as F
 import torch
 from base import BaseModel
 from torch.autograd import Variable
+import random
 
 
 class LSTM(nn.Module):
@@ -54,21 +55,21 @@ class CNN_LSTM(nn.Module):
             dropout = dropout
         )
         self.linear = nn.Linear(in_features=n_hidden, out_features=1)
-    def reset_hidden_state(self, batch_size):
+    def reset_hidden_state(self):
         self.hidden = (
-            torch.zeros(self.n_layers, batch_size, self.n_hidden),
-            torch.zeros(self.n_layers, batch_size, self.n_hidden)
+            torch.zeros(self.n_layers, self.seq_len-1, self.n_hidden),
+            torch.zeros(self.n_layers, self.seq_len-1, self.n_hidden)
         )
     def forward(self, sequences):
         batch_size, seq_len  = sequences.size()
-        self.reset_hidden_state(batch_size)
+        self.reset_hidden_state()
 
         sequences = sequences.to(dtype=self.dtype)
         self.hidden = (self.hidden[0].to(dtype=self.dtype), self.hidden[1].to(dtype=self.dtype))
 
-        sequences = self.c1(sequences.view(batch_size, 1, seq_len))  
+        sequences = self.c1(sequences.view(len(sequences), 1, -1))  
         lstm_out, self.hidden = self.lstm(
-            sequences.view(seq_len - 1, batch_size, -1),  
+            sequences.view(batch_size, seq_len - 1, -1),  
             self.hidden
         )
         last_time_step = lstm_out.view(seq_len - 1, batch_size, self.n_hidden)[-1]  
@@ -102,40 +103,46 @@ class RNN(nn.Module):
         return out
   
 
-class GRU(nn.Module) :
+class GRU(nn.Module):
     def __init__(self, n_features, n_hidden, seq_len, n_layers, dropout=0.2, n_classes = 1) :
         super(GRU, self).__init__()
         self.dtype = torch.float32
         self.n_classes = n_classes
         self.n_layers = n_layers
         self.n_features = n_features
-        self.n_hidden = n_hidden
         self.seq_len = seq_len
         
-        self.gru = nn.GRU(
-            input_size=n_features,
-            hidden_size=n_hidden,
-            num_layers=n_layers,
-            batch_first=True, 
-            dropout=dropout
-            )
-        self.fc_1 = nn.Linear(n_hidden, 128)
-        self.fc = nn.Linear(128, n_classes)
-        self.relu = nn.ReLU()
-        
-    def forward(self, x) :
+        # Hidden layers의 뉴런 수를 리스트로 저장
+        hidden_units = [128, 64, 32, 16]
+        self.hidden_units = hidden_units
+
+        # GRU 레이어 정의
+        self.gru_layers = nn.ModuleList([
+            nn.GRU(
+                input_size=n_features,
+                hidden_size=hidden_unit,
+                num_layers=1,  # 각 GRU 레이어는 1개의 hidden layer만 사용
+                batch_first=True,
+                dropout=dropout
+            ) for hidden_unit in hidden_units
+        ])
+
+        # 선형 레이어 추가
+        self.fc = nn.Linear(hidden_units[-1], n_classes)
+        self.tanh = nn.Tanh()
+
+    def forward(self, x):
         x = x.unsqueeze(2).type(self.dtype)
-        h_0 = Variable(torch.zeros(self.n_layers, x.size(0), self.n_hidden))
-        output, (hn) = self.gru(x, (h_0))
-        hn = hn.view(-1, self.n_hidden)
-        out = self.relu(hn)
-        out = self.fc_1(out)
-        out = self.relu(out)
+        batch_size = x.size(0)
+        h_0 = [Variable(torch.zeros(1, batch_size, hidden_unit)) for hidden_unit in self.hidden_units]
+        h_n = []
+
+        for i in range(len(self.gru_layers)):
+            gru_layer = self.gru_layers[i]
+            out, hn = gru_layer(x, h_0[i])
+            h_n.append(hn)
+
+        out = self.tanh(h_n[-1].view(batch_size, -1))  # 마지막 hidden layer의 출력
         out = self.fc(out)
+
         return out
-
-
-#python test.py --resume saved/models/CNNLSTMmodel/1004_001611/model_best.pth
-#python test.py --resume saved/models/LSTMmodel/1004_004611/model_best.pth
-#python test.py --resume saved/models/RNNmodel/1004_031931/model_best.pth
-#python test.py --resume saved/models/GRUmodel/1004_035725/model_best.pth

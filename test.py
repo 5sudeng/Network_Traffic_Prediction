@@ -1,14 +1,17 @@
 import argparse
 import torch
+import pandas as pd
+import os
 from tqdm import tqdm
 import data_loader.data_loaders as module_data
 import model.loss as module_loss
 import model.metric as module_metric
 import model.model as module_arch
 from parse_config import ConfigParser
-import numpy as np
-import matplotlib.pyplot as plt
 from data.transformation.preprocessing import MyDataset
+import numpy as np
+from sklearn.metrics import mean_absolute_error, mean_squared_error
+import matplotlib.pyplot as plt
 
 def main(config):
     logger = config.get_logger('test')
@@ -78,6 +81,32 @@ def main(config):
         met.__name__: total_metrics[i].item() / n_samples for i, met in enumerate(metric_fns)
     })
     logger.info(log)
+
+    mae = mean_absolute_error(ground_truth, predictions) 
+    mse = mean_squared_error(ground_truth, predictions)
+    rmse = np.sqrt(mse)
+    nrmse = rmse / (max(ground_truth)-min(ground_truth))
+
+    log = {
+    'MAE': mae,
+    'MSE': mse,
+    'RMSE': rmse,
+    'NRMSE': nrmse,
+    'epoch': config["trainer"]["epochs"],
+    'lr': config["optimizer"]["args"]["lr"],
+    'w decay': config["optimizer"]["args"]["weight_decay"],
+    'step size': config["lr_scheduler"]["args"]["step_size"],
+    'gamma': config["lr_scheduler"]["args"]["gamma"],
+    'arch': config["arch"]["type"],
+}
+
+    # Save results to CSV
+    if not os.path.exists('results.csv'):
+        df = pd.DataFrame(columns=list(log.keys()))
+        df.to_csv('results.csv', index=False)
+
+    df = pd.DataFrame(log, index=[0])
+    df.to_csv('results.csv', mode='a', header=False, index=False)
 
     #역 정규화 수행
     predictions = predictions * (max_val - min_val) + min_val

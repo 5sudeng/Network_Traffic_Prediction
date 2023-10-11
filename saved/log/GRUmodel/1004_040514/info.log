@@ -1,8 +1,0 @@
-2023-10-04 04:05:14,545 - test - INFO - GRU(
-  (gru): GRU(1, 50, batch_first=True, dropout=0.2)
-  (fc_1): Linear(in_features=50, out_features=128, bias=True)
-  (fc): Linear(in_features=128, out_features=1, bias=True)
-  (relu): ReLU()
-)
-2023-10-04 04:05:14,545 - test - INFO - Loading checkpoint: saved/models/GRUmodel/1004_035725/model_best.pth ...
-2023-10-04 04:05:23,114 - test - INFO - {'loss': 0.21135176116908327}

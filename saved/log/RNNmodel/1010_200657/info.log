@@ -1,0 +1,73 @@
+2023-10-10 20:06:58,001 - train - INFO - RNN(
+  (rnn): RNN(1, 50, batch_first=True, dropout=0.2)
+  (fc): Sequential(
+    (0): Linear(in_features=150, out_features=1, bias=True)
+    (1): Sigmoid()
+  )
+)
+2023-10-10 20:07:40,195 - trainer - INFO -     epoch          : 1
+2023-10-10 20:07:40,196 - trainer - INFO -     loss           : 0.21360698678483536
+2023-10-10 20:07:40,196 - trainer - INFO -     val_loss       : 0.20074203681876926
+2023-10-10 20:07:40,209 - trainer - INFO - Saving checkpoint: saved/models/RNNmodel/1010_200657/checkpoint-epoch1.pth ...
+2023-10-10 20:07:40,213 - trainer - INFO - Saving current best: model_best.pth ...
+2023-10-10 20:08:08,984 - trainer - INFO -     epoch          : 2
+2023-10-10 20:08:08,986 - trainer - INFO -     loss           : 0.20398366204519716
+2023-10-10 20:08:08,986 - trainer - INFO -     val_loss       : 0.2010338429308349
+2023-10-10 20:08:08,992 - trainer - INFO - Saving checkpoint: saved/models/RNNmodel/1010_200657/checkpoint-epoch2.pth ...
+2023-10-10 20:08:38,646 - trainer - INFO -     epoch          : 3
+2023-10-10 20:08:38,647 - trainer - INFO -     loss           : 0.20405246207078917
+2023-10-10 20:08:38,648 - trainer - INFO -     val_loss       : 0.2019322234658811
+2023-10-10 20:08:38,652 - trainer - INFO - Saving checkpoint: saved/models/RNNmodel/1010_200657/checkpoint-epoch3.pth ...
+2023-10-10 20:09:07,996 - trainer - INFO -     epoch          : 4
+2023-10-10 20:09:07,998 - trainer - INFO -     loss           : 0.2038730975592597
+2023-10-10 20:09:07,998 - trainer - INFO -     val_loss       : 0.20321406474879802
+2023-10-10 20:09:08,003 - trainer - INFO - Saving checkpoint: saved/models/RNNmodel/1010_200657/checkpoint-epoch4.pth ...
+2023-10-10 20:09:39,030 - trainer - INFO -     epoch          : 5
+2023-10-10 20:09:39,031 - trainer - INFO -     loss           : 0.2040047993365841
+2023-10-10 20:09:39,031 - trainer - INFO -     val_loss       : 0.1995414408166106
+2023-10-10 20:09:39,036 - trainer - INFO - Saving checkpoint: saved/models/RNNmodel/1010_200657/checkpoint-epoch5.pth ...
+2023-10-10 20:09:39,039 - trainer - INFO - Saving current best: model_best.pth ...
+2023-10-10 20:10:08,732 - trainer - INFO -     epoch          : 6
+2023-10-10 20:10:08,733 - trainer - INFO -     loss           : 0.20405046343758618
+2023-10-10 20:10:08,733 - trainer - INFO -     val_loss       : 0.20456231661562083
+2023-10-10 20:10:08,736 - trainer - INFO - Saving checkpoint: saved/models/RNNmodel/1010_200657/checkpoint-epoch6.pth ...
+2023-10-10 20:10:38,123 - trainer - INFO -     epoch          : 7
+2023-10-10 20:10:38,125 - trainer - INFO -     loss           : 0.20392463608687095
+2023-10-10 20:10:38,125 - trainer - INFO -     val_loss       : 0.20473444644362518
+2023-10-10 20:10:38,129 - trainer - INFO - Saving checkpoint: saved/models/RNNmodel/1010_200657/checkpoint-epoch7.pth ...
+2023-10-10 20:11:09,366 - trainer - INFO -     epoch          : 8
+2023-10-10 20:11:09,367 - trainer - INFO -     loss           : 0.20411164793785264
+2023-10-10 20:11:09,367 - trainer - INFO -     val_loss       : 0.20469098954030684
+2023-10-10 20:11:09,370 - trainer - INFO - Saving checkpoint: saved/models/RNNmodel/1010_200657/checkpoint-epoch8.pth ...
+2023-10-10 20:11:39,427 - trainer - INFO -     epoch          : 9
+2023-10-10 20:11:39,428 - trainer - INFO -     loss           : 0.204028233883033
+2023-10-10 20:11:39,428 - trainer - INFO -     val_loss       : 0.20258259124037337
+2023-10-10 20:11:39,432 - trainer - INFO - Saving checkpoint: saved/models/RNNmodel/1010_200657/checkpoint-epoch9.pth ...
+2023-10-10 20:12:09,142 - trainer - INFO -     epoch          : 10
+2023-10-10 20:12:09,144 - trainer - INFO -     loss           : 0.2039667641164718
+2023-10-10 20:12:09,144 - trainer - INFO -     val_loss       : 0.2009308324410284
+2023-10-10 20:12:09,151 - trainer - INFO - Saving checkpoint: saved/models/RNNmodel/1010_200657/checkpoint-epoch10.pth ...
+2023-10-10 20:12:40,086 - trainer - INFO -     epoch          : 11
+2023-10-10 20:12:40,088 - trainer - INFO -     loss           : 0.2041733860272422
+2023-10-10 20:12:40,088 - trainer - INFO -     val_loss       : 0.20161872759240462
+2023-10-10 20:12:40,092 - trainer - INFO - Saving checkpoint: saved/models/RNNmodel/1010_200657/checkpoint-epoch11.pth ...
+2023-10-10 20:13:09,608 - trainer - INFO -     epoch          : 12
+2023-10-10 20:13:09,609 - trainer - INFO -     loss           : 0.20407043361088212
+2023-10-10 20:13:09,610 - trainer - INFO -     val_loss       : 0.20089178646512937
+2023-10-10 20:13:09,618 - trainer - INFO - Saving checkpoint: saved/models/RNNmodel/1010_200657/checkpoint-epoch12.pth ...
+2023-10-10 20:13:39,800 - trainer - INFO -     epoch          : 13
+2023-10-10 20:13:39,802 - trainer - INFO -     loss           : 0.20372809350173415
+2023-10-10 20:13:39,802 - trainer - INFO -     val_loss       : 0.20382354323397026
+2023-10-10 20:13:39,808 - trainer - INFO - Saving checkpoint: saved/models/RNNmodel/1010_200657/checkpoint-epoch13.pth ...
+2023-10-10 20:14:09,875 - trainer - INFO -     epoch          : 14
+2023-10-10 20:14:09,876 - trainer - INFO -     loss           : 0.2039614629158918
+2023-10-10 20:14:09,877 - trainer - INFO -     val_loss       : 0.19957066277390234
+2023-10-10 20:14:09,884 - trainer - INFO - Saving checkpoint: saved/models/RNNmodel/1010_200657/checkpoint-epoch14.pth ...
+2023-10-10 20:14:42,405 - trainer - INFO -     epoch          : 15
+2023-10-10 20:14:42,406 - trainer - INFO -     loss           : 0.20376650664523013
+2023-10-10 20:14:42,406 - trainer - INFO -     val_loss       : 0.20128537345535938
+2023-10-10 20:14:42,412 - trainer - INFO - Saving checkpoint: saved/models/RNNmodel/1010_200657/checkpoint-epoch15.pth ...
+2023-10-10 20:15:13,260 - trainer - INFO -     epoch          : 16
+2023-10-10 20:15:13,262 - trainer - INFO -     loss           : 0.20407382386512746
+2023-10-10 20:15:13,263 - trainer - INFO -     val_loss       : 0.2019833428242804
+2023-10-10 20:15:13,264 - trainer - INFO - Validation performance didn't improve for 10 epochs. Training stops.

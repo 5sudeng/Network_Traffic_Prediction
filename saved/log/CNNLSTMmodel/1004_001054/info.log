@@ -1,5 +1,0 @@
-2023-10-04 00:10:55,125 - train - INFO - CNN_LSTM(
-  (c1): Conv1d(1, 1, kernel_size=(2,), stride=(1,))
-  (lstm): LSTM(1, 50, dropout=0.2)
-  (linear): Linear(in_features=50, out_features=1, bias=True)
-)

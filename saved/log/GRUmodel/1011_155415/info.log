@@ -1,0 +1,10 @@
+2023-10-11 15:54:15,308 - train - INFO - GRU(
+  (gru_layers): ModuleList(
+    (0): GRU(1, 128, batch_first=True, dropout=0.2)
+    (1): GRU(1, 64, batch_first=True, dropout=0.2)
+    (2): GRU(1, 32, batch_first=True, dropout=0.2)
+    (3): GRU(1, 16, batch_first=True, dropout=0.2)
+  )
+  (fc): Linear(in_features=16, out_features=1, bias=True)
+  (tanh): Tanh()
+)

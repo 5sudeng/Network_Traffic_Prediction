@@ -67,7 +67,12 @@ if __name__ == '__main__':
     CustomArgs = collections.namedtuple('CustomArgs', 'flags type target')
     options = [
         CustomArgs(['--lr', '--learning_rate'], type=float, target='optimizer;args;lr'),
-        CustomArgs(['--bs', '--batch_size'], type=int, target='data_loader;args;batch_size')
+        CustomArgs(['--wd', '--weight_decay'], type=float, target='optimizer;args;weight_decay'),
+        CustomArgs(['--bs', '--batch_size'], type=int, target='data_loader;args;batch_size'),
+        CustomArgs(['--ss', '--step_size'], type=int, target='lr_scheduler;args;step_size'),
+        CustomArgs(['--g', '--gamma'], type=float, target='lr_scheduler;args;gamma'),
+        CustomArgs(['--e', '--epoch'], type=int, target='trainer;epochs'),
+
     ]
     config = ConfigParser.from_args(args, options)
     main(config)

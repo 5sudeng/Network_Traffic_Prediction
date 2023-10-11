@@ -1,0 +1,29 @@
+2023-10-11 03:46:01,435 - train - INFO - CNN_LSTM(
+  (c1): Conv1d(1, 1, kernel_size=(2,), stride=(1,))
+  (lstm): LSTM(1, 50, dropout=0.2)
+  (linear): Linear(in_features=50, out_features=1, bias=True)
+)
+2023-10-11 03:46:36,518 - trainer - INFO -     epoch          : 1
+2023-10-11 03:46:36,519 - trainer - INFO -     loss           : 0.20382166956743022
+2023-10-11 03:46:36,519 - trainer - INFO -     val_loss       : 0.19653612237712406
+2023-10-11 03:46:36,528 - trainer - INFO - Saving checkpoint: saved/models/CNNLSTMmodel/1011_034601/checkpoint-epoch1.pth ...
+2023-10-11 03:46:36,532 - trainer - INFO - Saving current best: model_best.pth ...
+2023-10-11 03:47:03,914 - trainer - INFO -     epoch          : 2
+2023-10-11 03:47:03,915 - trainer - INFO -     loss           : 0.19521232300765337
+2023-10-11 03:47:03,915 - trainer - INFO -     val_loss       : 0.19276675514542477
+2023-10-11 03:47:03,922 - trainer - INFO - Saving checkpoint: saved/models/CNNLSTMmodel/1011_034601/checkpoint-epoch2.pth ...
+2023-10-11 03:47:03,925 - trainer - INFO - Saving current best: model_best.pth ...
+2023-10-11 03:47:31,967 - trainer - INFO -     epoch          : 3
+2023-10-11 03:47:31,968 - trainer - INFO -     loss           : 0.1893600697830471
+2023-10-11 03:47:31,968 - trainer - INFO -     val_loss       : 0.202068986628185
+2023-10-11 03:47:31,974 - trainer - INFO - Saving checkpoint: saved/models/CNNLSTMmodel/1011_034601/checkpoint-epoch3.pth ...
+2023-10-11 03:48:00,727 - trainer - INFO -     epoch          : 4
+2023-10-11 03:48:00,729 - trainer - INFO -     loss           : 0.19060321930812993
+2023-10-11 03:48:00,729 - trainer - INFO -     val_loss       : 0.19086707329551583
+2023-10-11 03:48:00,734 - trainer - INFO - Saving checkpoint: saved/models/CNNLSTMmodel/1011_034601/checkpoint-epoch4.pth ...
+2023-10-11 03:48:00,738 - trainer - INFO - Saving current best: model_best.pth ...
+2023-10-11 03:48:29,490 - trainer - INFO -     epoch          : 5
+2023-10-11 03:48:29,491 - trainer - INFO -     loss           : 0.1885083489317591
+2023-10-11 03:48:29,491 - trainer - INFO -     val_loss       : 0.1904414674395197
+2023-10-11 03:48:29,502 - trainer - INFO - Saving checkpoint: saved/models/CNNLSTMmodel/1011_034601/checkpoint-epoch5.pth ...
+2023-10-11 03:48:29,509 - trainer - INFO - Saving current best: model_best.pth ...

@@ -1,0 +1,35 @@
+2023-10-11 15:54:30,319 - train - INFO - GRU(
+  (gru_layers): ModuleList(
+    (0): GRU(1, 128, batch_first=True, dropout=0.2)
+    (1): GRU(1, 64, batch_first=True, dropout=0.2)
+    (2): GRU(1, 32, batch_first=True, dropout=0.2)
+    (3): GRU(1, 16, batch_first=True, dropout=0.2)
+  )
+  (fc): Linear(in_features=16, out_features=1, bias=True)
+  (tanh): Tanh()
+)
+2023-10-11 15:55:05,639 - trainer - INFO -     epoch          : 1
+2023-10-11 15:55:05,639 - trainer - INFO -     loss           : 0.25406298378765
+2023-10-11 15:55:05,639 - trainer - INFO -     val_loss       : 0.18787107558900246
+2023-10-11 15:55:05,647 - trainer - INFO - Saving checkpoint: saved/models/GRUmodel/1011_155430/checkpoint-epoch1.pth ...
+2023-10-11 15:55:05,651 - trainer - INFO - Saving current best: model_best.pth ...
+2023-10-11 15:55:34,075 - trainer - INFO -     epoch          : 2
+2023-10-11 15:55:34,076 - trainer - INFO -     loss           : 0.17992552908106826
+2023-10-11 15:55:34,077 - trainer - INFO -     val_loss       : 0.16688823356370378
+2023-10-11 15:55:34,084 - trainer - INFO - Saving checkpoint: saved/models/GRUmodel/1011_155430/checkpoint-epoch2.pth ...
+2023-10-11 15:55:34,087 - trainer - INFO - Saving current best: model_best.pth ...
+2023-10-11 15:56:02,884 - trainer - INFO -     epoch          : 3
+2023-10-11 15:56:02,885 - trainer - INFO -     loss           : 0.15020577879216318
+2023-10-11 15:56:02,885 - trainer - INFO -     val_loss       : 0.12923663637775473
+2023-10-11 15:56:02,890 - trainer - INFO - Saving checkpoint: saved/models/GRUmodel/1011_155430/checkpoint-epoch3.pth ...
+2023-10-11 15:56:02,893 - trainer - INFO - Saving current best: model_best.pth ...
+2023-10-11 15:56:33,716 - trainer - INFO -     epoch          : 4
+2023-10-11 15:56:33,718 - trainer - INFO -     loss           : 0.10916674028053011
+2023-10-11 15:56:33,718 - trainer - INFO -     val_loss       : 0.08847958108916215
+2023-10-11 15:56:33,724 - trainer - INFO - Saving checkpoint: saved/models/GRUmodel/1011_155430/checkpoint-epoch4.pth ...
+2023-10-11 15:56:33,729 - trainer - INFO - Saving current best: model_best.pth ...
+2023-10-11 15:57:02,721 - trainer - INFO -     epoch          : 5
+2023-10-11 15:57:02,722 - trainer - INFO -     loss           : 0.08472022031026008
+2023-10-11 15:57:02,722 - trainer - INFO -     val_loss       : 0.07507472569952596
+2023-10-11 15:57:02,726 - trainer - INFO - Saving checkpoint: saved/models/GRUmodel/1011_155430/checkpoint-epoch5.pth ...
+2023-10-11 15:57:02,730 - trainer - INFO - Saving current best: model_best.pth ...

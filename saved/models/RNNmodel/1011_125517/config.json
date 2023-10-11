@@ -1,0 +1,54 @@
+{
+    "name": "RNNmodel",
+    "n_gpu": 1,
+    "arch": {
+        "type": "RNN",
+        "args": {
+            "n_features": 1,
+            "n_hidden": 50,
+            "seq_len": 3,
+            "n_layers": 1
+        }
+    },
+    "data_loader": {
+        "type": "LSTMDataLoader",
+        "args": {
+            "data_dir": "data/network-traffic-volume-2019-07-01.csv",
+            "batch_size": 8,
+            "shuffle": false,
+            "validation_split": 0.1,
+            "num_workers": 2
+        }
+    },
+    "optimizer": {
+        "type": "Adam",
+        "args": {
+            "lr": 0.001,
+            "weight_decay": 0,
+            "amsgrad": true
+        }
+    },
+    "loss": "L1_loss",
+    "metrics": [],
+    "lr_scheduler": {
+        "type": "StepLR",
+        "args": {
+            "step_size": 50,
+            "gamma": 0.1
+        }
+    },
+    "trainer": {
+        "epochs": 5,
+        "save_dir": "saved/",
+        "save_period": 1,
+        "verbosity": 2,
+        "monitor": "min val_loss",
+        "early_stop": 10,
+        "n_features": 1,
+        "n_hidden": 50,
+        "seq_len": 3,
+        "n_layers": 1,
+        "tensorboard": true,
+        "resume": "saved/"
+    }
+}

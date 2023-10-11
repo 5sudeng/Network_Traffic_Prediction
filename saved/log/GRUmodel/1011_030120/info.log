@@ -1,0 +1,15 @@
+2023-10-11 03:01:20,794 - train - INFO - GRU(
+  (gru): GRU(1, 50, batch_first=True, dropout=0.2)
+  (fc_1): Linear(in_features=50, out_features=128, bias=True)
+  (fc): Linear(in_features=128, out_features=1, bias=True)
+  (relu): ReLU()
+)
+2023-10-11 03:01:58,020 - trainer - INFO -     epoch          : 1
+2023-10-11 03:01:58,021 - trainer - INFO -     loss           : 0.2057605629966466
+2023-10-11 03:01:58,021 - trainer - INFO -     val_loss       : 0.20201151041434717
+2023-10-11 03:01:58,030 - trainer - INFO - Saving checkpoint: saved/models/GRUmodel/1011_030120/checkpoint-epoch1.pth ...
+2023-10-11 03:01:58,034 - trainer - INFO - Saving current best: model_best.pth ...
+2023-10-11 03:02:26,784 - trainer - INFO -     epoch          : 2
+2023-10-11 03:02:26,786 - trainer - INFO -     loss           : 0.2037530074855188
+2023-10-11 03:02:26,787 - trainer - INFO -     val_loss       : 0.2040336083252491
+2023-10-11 03:02:26,795 - trainer - INFO - Saving checkpoint: saved/models/GRUmodel/1011_030120/checkpoint-epoch2.pth ...

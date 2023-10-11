@@ -1,0 +1,12 @@
+2023-10-11 15:57:49,652 - test - INFO - GRU(
+  (gru_layers): ModuleList(
+    (0): GRU(1, 128, batch_first=True, dropout=0.2)
+    (1): GRU(1, 64, batch_first=True, dropout=0.2)
+    (2): GRU(1, 32, batch_first=True, dropout=0.2)
+    (3): GRU(1, 16, batch_first=True, dropout=0.2)
+  )
+  (fc): Linear(in_features=16, out_features=1, bias=True)
+  (tanh): Tanh()
+)
+2023-10-11 15:57:49,652 - test - INFO - Loading checkpoint: saved/models/GRUmodel/1011_155430/model_best.pth ...
+2023-10-11 15:57:58,822 - test - INFO - {'loss': 0.0825904763877442}

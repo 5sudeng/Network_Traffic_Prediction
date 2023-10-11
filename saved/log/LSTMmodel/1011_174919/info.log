@@ -1,0 +1,91 @@
+2023-10-11 17:49:20,106 - train - INFO - LSTM(
+  (lstm): LSTM(1, 50, dropout=0.2)
+  (linear): Linear(in_features=50, out_features=1, bias=True)
+)
+2023-10-11 17:49:56,277 - trainer - INFO -     epoch          : 1
+2023-10-11 17:49:56,278 - trainer - INFO -     loss           : 0.2005588241053808
+2023-10-11 17:49:56,278 - trainer - INFO -     val_loss       : 0.20112362233015754
+2023-10-11 17:49:56,285 - trainer - INFO - Saving checkpoint: saved/models/LSTMmodel/1011_174919/checkpoint-epoch1.pth ...
+2023-10-11 17:49:56,288 - trainer - INFO - Saving current best: model_best.pth ...
+2023-10-11 17:50:26,838 - trainer - INFO -     epoch          : 2
+2023-10-11 17:50:26,839 - trainer - INFO -     loss           : 0.1962999378287785
+2023-10-11 17:50:26,840 - trainer - INFO -     val_loss       : 0.19991476871033706
+2023-10-11 17:50:26,844 - trainer - INFO - Saving checkpoint: saved/models/LSTMmodel/1011_174919/checkpoint-epoch2.pth ...
+2023-10-11 17:50:26,847 - trainer - INFO - Saving current best: model_best.pth ...
+2023-10-11 17:50:55,430 - trainer - INFO -     epoch          : 3
+2023-10-11 17:50:55,430 - trainer - INFO -     loss           : 0.19485518191002704
+2023-10-11 17:50:55,431 - trainer - INFO -     val_loss       : 0.19184622329529086
+2023-10-11 17:50:55,435 - trainer - INFO - Saving checkpoint: saved/models/LSTMmodel/1011_174919/checkpoint-epoch3.pth ...
+2023-10-11 17:50:55,438 - trainer - INFO - Saving current best: model_best.pth ...
+2023-10-11 17:51:23,936 - trainer - INFO -     epoch          : 4
+2023-10-11 17:51:23,937 - trainer - INFO -     loss           : 0.19327364124555618
+2023-10-11 17:51:23,937 - trainer - INFO -     val_loss       : 0.1892873403352586
+2023-10-11 17:51:23,943 - trainer - INFO - Saving checkpoint: saved/models/LSTMmodel/1011_174919/checkpoint-epoch4.pth ...
+2023-10-11 17:51:23,947 - trainer - INFO - Saving current best: model_best.pth ...
+2023-10-11 17:51:52,319 - trainer - INFO -     epoch          : 5
+2023-10-11 17:51:52,320 - trainer - INFO -     loss           : 0.19233838243135148
+2023-10-11 17:51:52,321 - trainer - INFO -     val_loss       : 0.1922305126468674
+2023-10-11 17:51:52,326 - trainer - INFO - Saving checkpoint: saved/models/LSTMmodel/1011_174919/checkpoint-epoch5.pth ...
+2023-10-11 17:52:20,264 - trainer - INFO -     epoch          : 6
+2023-10-11 17:52:20,265 - trainer - INFO -     loss           : 0.19257555921041336
+2023-10-11 17:52:20,265 - trainer - INFO -     val_loss       : 0.19172942791745382
+2023-10-11 17:52:20,269 - trainer - INFO - Saving checkpoint: saved/models/LSTMmodel/1011_174919/checkpoint-epoch6.pth ...
+2023-10-11 17:52:50,423 - trainer - INFO -     epoch          : 7
+2023-10-11 17:52:50,424 - trainer - INFO -     loss           : 0.19481873149600218
+2023-10-11 17:52:50,424 - trainer - INFO -     val_loss       : 0.18615347187167652
+2023-10-11 17:52:50,429 - trainer - INFO - Saving checkpoint: saved/models/LSTMmodel/1011_174919/checkpoint-epoch7.pth ...
+2023-10-11 17:52:50,432 - trainer - INFO - Saving current best: model_best.pth ...
+2023-10-11 17:53:18,923 - trainer - INFO -     epoch          : 8
+2023-10-11 17:53:18,923 - trainer - INFO -     loss           : 0.19133526517683613
+2023-10-11 17:53:18,924 - trainer - INFO -     val_loss       : 0.19249087347483
+2023-10-11 17:53:18,929 - trainer - INFO - Saving checkpoint: saved/models/LSTMmodel/1011_174919/checkpoint-epoch8.pth ...
+2023-10-11 17:53:48,506 - trainer - INFO -     epoch          : 9
+2023-10-11 17:53:48,510 - trainer - INFO -     loss           : 0.19282820623875824
+2023-10-11 17:53:48,510 - trainer - INFO -     val_loss       : 0.19432513002944724
+2023-10-11 17:53:48,519 - trainer - INFO - Saving checkpoint: saved/models/LSTMmodel/1011_174919/checkpoint-epoch9.pth ...
+2023-10-11 17:54:21,286 - trainer - INFO -     epoch          : 10
+2023-10-11 17:54:21,301 - trainer - INFO -     loss           : 0.1923622141071143
+2023-10-11 17:54:21,302 - trainer - INFO -     val_loss       : 0.1897027263621048
+2023-10-11 17:54:21,308 - trainer - INFO - Saving checkpoint: saved/models/LSTMmodel/1011_174919/checkpoint-epoch10.pth ...
+2023-10-11 17:54:52,448 - trainer - INFO -     epoch          : 11
+2023-10-11 17:54:52,449 - trainer - INFO -     loss           : 0.1898424565515666
+2023-10-11 17:54:52,449 - trainer - INFO -     val_loss       : 0.18730125089637953
+2023-10-11 17:54:52,456 - trainer - INFO - Saving checkpoint: saved/models/LSTMmodel/1011_174919/checkpoint-epoch11.pth ...
+2023-10-11 17:55:22,494 - trainer - INFO -     epoch          : 12
+2023-10-11 17:55:22,495 - trainer - INFO -     loss           : 0.1888784352763266
+2023-10-11 17:55:22,495 - trainer - INFO -     val_loss       : 0.1933065896977498
+2023-10-11 17:55:22,500 - trainer - INFO - Saving checkpoint: saved/models/LSTMmodel/1011_174919/checkpoint-epoch12.pth ...
+2023-10-11 17:55:52,963 - trainer - INFO -     epoch          : 13
+2023-10-11 17:55:52,965 - trainer - INFO -     loss           : 0.18853503082833437
+2023-10-11 17:55:52,965 - trainer - INFO -     val_loss       : 0.1853108923403626
+2023-10-11 17:55:52,975 - trainer - INFO - Saving checkpoint: saved/models/LSTMmodel/1011_174919/checkpoint-epoch13.pth ...
+2023-10-11 17:55:52,979 - trainer - INFO - Saving current best: model_best.pth ...
+2023-10-11 17:56:23,871 - trainer - INFO -     epoch          : 14
+2023-10-11 17:56:23,872 - trainer - INFO -     loss           : 0.19047349994527996
+2023-10-11 17:56:23,872 - trainer - INFO -     val_loss       : 0.19571813643756383
+2023-10-11 17:56:23,881 - trainer - INFO - Saving checkpoint: saved/models/LSTMmodel/1011_174919/checkpoint-epoch14.pth ...
+2023-10-11 17:56:56,053 - trainer - INFO -     epoch          : 15
+2023-10-11 17:56:56,055 - trainer - INFO -     loss           : 0.19013237007481323
+2023-10-11 17:56:56,056 - trainer - INFO -     val_loss       : 0.1919442766501036
+2023-10-11 17:56:56,063 - trainer - INFO - Saving checkpoint: saved/models/LSTMmodel/1011_174919/checkpoint-epoch15.pth ...
+2023-10-11 17:57:27,483 - trainer - INFO -     epoch          : 16
+2023-10-11 17:57:27,484 - trainer - INFO -     loss           : 0.18967619959243562
+2023-10-11 17:57:27,484 - trainer - INFO -     val_loss       : 0.1873495756732243
+2023-10-11 17:57:27,491 - trainer - INFO - Saving checkpoint: saved/models/LSTMmodel/1011_174919/checkpoint-epoch16.pth ...
+2023-10-11 17:57:57,402 - trainer - INFO -     epoch          : 17
+2023-10-11 17:57:57,403 - trainer - INFO -     loss           : 0.18905433334253602
+2023-10-11 17:57:57,403 - trainer - INFO -     val_loss       : 0.19941302105554798
+2023-10-11 17:57:57,408 - trainer - INFO - Saving checkpoint: saved/models/LSTMmodel/1011_174919/checkpoint-epoch17.pth ...
+2023-10-11 17:58:27,515 - trainer - INFO -     epoch          : 18
+2023-10-11 17:58:27,515 - trainer - INFO -     loss           : 0.1900447511387027
+2023-10-11 17:58:27,516 - trainer - INFO -     val_loss       : 0.19432753018058418
+2023-10-11 17:58:27,521 - trainer - INFO - Saving checkpoint: saved/models/LSTMmodel/1011_174919/checkpoint-epoch18.pth ...
+2023-10-11 17:58:58,312 - trainer - INFO -     epoch          : 19
+2023-10-11 17:58:58,313 - trainer - INFO -     loss           : 0.18676301608245832
+2023-10-11 17:58:58,314 - trainer - INFO -     val_loss       : 0.1806791150303841
+2023-10-11 17:58:58,320 - trainer - INFO - Saving checkpoint: saved/models/LSTMmodel/1011_174919/checkpoint-epoch19.pth ...
+2023-10-11 17:58:58,322 - trainer - INFO - Saving current best: model_best.pth ...
+2023-10-11 17:59:28,659 - trainer - INFO -     epoch          : 20
+2023-10-11 17:59:28,660 - trainer - INFO -     loss           : 0.18785994008918824
+2023-10-11 17:59:28,660 - trainer - INFO -     val_loss       : 0.18226076285972123
+2023-10-11 17:59:28,676 - trainer - INFO - Saving checkpoint: saved/models/LSTMmodel/1011_174919/checkpoint-epoch20.pth ...
